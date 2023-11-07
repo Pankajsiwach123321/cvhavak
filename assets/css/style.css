@@ -55,15 +55,17 @@
 }
 
 .nav_button {
-    padding: 17px 20px;
+    padding: 17px 38px;
     transition: all .3s linear;
     border-radius: 41px;
+    text-wrap: nowrap;
     border: 1px solid transparent;
     background: var(--color-orange);
 }
 
 .nav_buttonfooter {
-    padding: 17px 30px;
+    padding: 17px 38px;
+    text-wrap: nowrap;
     transition: all .3s linear;
     border-radius: 41px;
     border: 1px solid var(--color-orange);
@@ -76,11 +78,12 @@
 }
 
 .nav_button2 {
-    padding: 17px 30px;
+    padding: 17px 38px;
+    text-wrap: nowrap;
     transition: all .3s linear;
     border-radius: 41px;
     border: 1px solid var(--color-orange);
-    background: var(--color-white);
+    background: transparent;
 }
 
 .lineunder {
@@ -109,13 +112,13 @@
 }
 
 .mt-yourcv2 {
-    margin-top: 100px;
+    margin-top: 70px;
     margin-bottom: 0;
 }
 
 .mt-yourcv {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .cvorangeball {
@@ -204,45 +207,19 @@
 }
 
 .accordion {
-    --bs-accordion-color: var(--bs-body-color);
-    --bs-accordion-bg: var(--bs-body-bg);
-    --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
     --bs-accordion-border-color: unset !important;
     --bs-accordion-border-width: unset !important;
     --bs-accordion-border-radius: unset !important;
     --bs-accordion-inner-border-radius: unset !important;
-    --bs-accordion-btn-padding-x: 1.25rem;
-    --bs-accordion-btn-padding-y: 1rem;
-    --bs-accordion-btn-color: var(--bs-body-color);
-    --bs-accordion-btn-bg: var(--bs-accordion-bg);
-    --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e);
-    --bs-accordion-btn-icon-width: 1.25rem;
-    --bs-accordion-btn-icon-transform: rotate(-180deg);
-    --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-    --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23052c65'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e);
-    --bs-accordion-btn-focus-border-color: #86b7fe;
-    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-    --bs-accordion-body-padding-x: 1.25rem;
-    --bs-accordion-body-padding-y: 1rem;
-    --bs-accordion-active-color: var(--bs-primary-text-emphasis);
-    --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+    --bs-accordion-btn-focus-border-color: unset !important;
 }
 
 .accordion-button {
-    position: relative;
-    display: flex;
-    align-items: center;
     gap: 23px;
     width: 100%;
     padding: 0px !important;
     font-size: var(--fs-2xl) !important;
     color: var(--color-main-black) !important;
-    text-align: left;
-    background-color: var(--bs-accordion-btn-bg);
-    border: 0;
-    border-radius: 0;
-    overflow-anchor: none;
-    transition: var(--bs-accordion-transition);
 }
 
 .accordion-button:not(.collapsed) {
@@ -256,10 +233,12 @@
 }
 
 .accordion-item {
-    color: var(--bs-accordion-color);
-    background-color: var(--bs-accordion-bg);
     padding: 24px 0px;
-    border-bottom: 1px solid #E6E5E5 !important;
+    border-bottom: 1px solid var(--color-sm) !important;
+}
+
+.accordion-item:last-child {
+    border-bottom: unset !important;
 }
 
 .accordion-body {
@@ -267,7 +246,7 @@
 }
 
 .bg-yourcv {
-    background-color: #F9F9F9;
+    background-color: var(--color-bg);
 }
 
 .mw-321 {
@@ -286,10 +265,6 @@
 
 .elegant-top-left {
     position: absolute;
-    left: 6%;
-    top: 22%;
-    max-width: 183px;
-    max-height: 201px;
     transform: rotate(-19.37deg);
     border-radius: 10px;
     box-shadow: 0px 3.01959px 35.22851px 0px rgba(0, 0, 0, 0.15);
@@ -299,10 +274,6 @@
 
 .elegant-bottom-left {
     position: absolute;
-    left: 11.5%;
-    bottom: 13%;
-    max-width: 207px;
-    max-height: 227px;
     transform: rotate(-33.137deg);
     border-radius: 10px;
     box-shadow: 0px 3.01959px 35.22851px 0px rgba(0, 0, 0, 0.15);
@@ -312,18 +283,12 @@
 
 .elegant-top-right {
     position: absolute;
-    right: 6%;
-    top: 17%;
-    max-width: 183px;
-    max-height: 201px;
     transform: rotate(21.718deg);
     border-radius: 10px;
     box-shadow: 0px 3.01959px 35.22851px 0px rgba(0, 0, 0, 0.15);
     z-index: -1;
     animation: shaketop-right 4s infinite forwards alternate;
 }
-
-
 
 @keyframes shakebottom-right {
     0% {
@@ -367,16 +332,11 @@
 
 .elegant-bottom-right {
     position: absolute;
-    right: 12.5%;
-    bottom: 13%;
-    max-width: 207px;
-    max-height: 228px;
     transform: rotate(29.336deg);
     border-radius: 10px;
     box-shadow: 0px 3.01959px 35.22851px 0px rgba(0, 0, 0, 0.15);
     z-index: -1;
     animation: shakebottom-right 4s infinite forwards alternate;
-
 }
 
 .halfring {
@@ -425,7 +385,6 @@
     height: 100%;
     max-width: 278px;
     max-height: 76px;
-    flex-shrink: 0;
     border-radius: 626px;
     opacity: 0.5;
     background: var(--color-orange);
@@ -447,15 +406,15 @@
     border-radius: 8px;
     height: 100%;
     width: 100%;
-    border: 1px solid #F7F7F7;
-    background: var(#fff);
+    border: 1px solid var(--color-f7);
+    background: var(--color-main-white);
     transition: all .3s linear;
     cursor: pointer;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.04);
 }
 
 .bg-bodys {
-    background-color: #FFFEFE;
+    background-color: var(--color-second-white);
 }
 
 .card-theme p {
@@ -469,7 +428,6 @@
 .card-theme:hover p {
     color: var(--color-orange);
 }
-
 
 @keyframes shake {
     0% {
@@ -525,7 +483,7 @@
 .nav_button:hover {
     color: var(--color-orange);
     border: 1px solid var(--color-orange);
-    background: var(--color-white);
+    background: transparent;
 }
 
 .nav_items:hover {
@@ -554,7 +512,7 @@
 }
 
 .copyright-border-top {
-    border-top: 1px solid #383838;
+    border-top: 1px solid var(--color-b3);
 }
 
 .icon-footer {
@@ -583,15 +541,26 @@
     padding: 15px 18px 14px;
     border-radius: 10px;
     background: var(--color-white);
+    height: 100%;
     box-shadow: 0px 18px 59px 0px rgba(0, 0, 0, 0.07);
 }
 
 .card-slide-text-sm {
     max-width: 323px;
+    height: 100%;
+    max-height: 115px;
     padding: 15px 18px 14px;
     border-radius: 10px;
     background: var(--color-white);
     box-shadow: 0px 18px 59px 0px rgba(0, 0, 0, 0.07);
+}
+
+.card-slide-text p {
+    margin-bottom: 0 !important;
+}
+
+.card-slide-text-sm p {
+    margin-bottom: 0 !important;
 }
 
 .slider-button {
@@ -599,6 +568,27 @@
     background-color: transparent;
     border-radius: 50px;
     border: 1.4px solid var(--color-orange);
+    transition: all .3s linear;
+}
+
+.slider-button:hover {
+    background-color: var(--color-orange);
+}
+
+.slider-button svg rect {
+    transition: all .3s linear;
+}
+
+.slider-button svg path {
+    transition: all .3s linear;
+}
+
+.slider-button:hover svg rect {
+    fill: var(--color-orange);
+}
+
+.slider-button:hover svg path {
+    fill: var(--color-white);
 }
 
 .card-success {
@@ -609,7 +599,7 @@
 }
 
 .bg-footer {
-    background-color: #070707;
+    background-color: var(--color-fobg);
 }
 
 .backto-top {
@@ -619,8 +609,9 @@
     cursor: pointer;
     transition: .3s linear;
 }
+
 .backto-top:hover {
-  transform: translateY(-20%);
+    transform: translateY(-20%);
 }
 
 .load-reload {
@@ -639,12 +630,9 @@
     0% {
         transform: rotate(360deg);
     }
-
 }
 
 /* navbar-responsive */
-
-
 .fix1,
 .fix2,
 .fix3 {
@@ -670,7 +658,7 @@
     width: 16px !important;
     height: 5px !important;
     border-radius: 6px;
-    background-color: #E6E5E5 !important;
+    background-color: var(--color-sm) !important;
 }
 
 .slick-dots li.slick-active {
@@ -720,7 +708,7 @@
         gap: 42px;
         max-width: 375px;
         height: 100%;
-        background: #FFFFFF;
+        background: var(--color-main-white);
         position: fixed;
         top: 0;
         z-index: 3;
@@ -761,7 +749,7 @@
         position: absolute;
         width: 100%;
         height: 0.3px;
-        background-color: #CCCCCC;
+        background-color: var(--color-nav-af);
         bottom: -24px;
         left: 0;
     }
@@ -769,7 +757,6 @@
     .over-flow {
         overflow-y: hidden;
     }
-
 }
 
 @media (min-width:576px) {
@@ -786,82 +773,55 @@
     }
 
     .elegant-top-left {
-        position: absolute;
         left: 22px;
         top: 5%;
         max-width: 122px;
         max-height: 134px;
         transform: rotate(-19.37deg);
-        border-radius: 10px;
-        box-shadow: 0px 3.01959px 35.22851px 0px rgba(0, 0, 0, 0.15);
-        z-index: -1;
     }
 
     .elegant-bottom-left {
-        position: absolute;
         left: 41px;
         bottom: 13%;
         max-width: 185px;
         max-height: 203px;
-        transform: rotate(-33.137deg);
-        border-radius: 10px;
-        box-shadow: 0px 3.01959px 35.22851px 0px rgba(0, 0, 0, 0.15);
-        z-index: -1;
     }
 
     .elegant-top-right {
-        position: absolute;
         right: 36px;
         top: 4%;
         max-width: 115px;
         max-height: 127px;
-        transform: rotate(21.718deg);
-        border-radius: 10px;
-        box-shadow: 0px 3.01959px 35.22851px 0px rgba(0, 0, 0, 0.15);
-        z-index: -1;
     }
 
     .elegant-bottom-right {
-        position: absolute;
         right: 55px;
         bottom: 13%;
         max-width: 174px;
         max-height: 190px;
-        transform: rotate(29.336deg);
-        border-radius: 10px;
-        box-shadow: 0px 3.01959px 35.22851px 0px rgba(0, 0, 0, 0.15);
-        z-index: -1;
     }
 
     .halfring {
-        position: absolute;
-        right: 5%;
         max-width: 76px;
         min-height: 52px;
         top: 40%;
-        z-index: -1;
     }
 
     .cubic-header {
-        position: absolute;
         left: 1%;
         bottom: 52%;
         max-width: 27px;
         max-height: 41px;
-        z-index: -1;
     }
 
     .orangeball-header {
-        position: absolute;
         left: 20%;
         max-width: 42px;
         max-height: 42px;
         top: 10%;
-        z-index: -1;
     }
 
     .lineunder {
-        position: absolute;
         bottom: -5px;
         right: 0;
         max-width: 240px;
@@ -874,8 +834,6 @@
 
     .card-success {
         padding: 36px 81px 36px 82px;
-        background-color: var(--color-orange);
-        border-radius: 21px;
         transform: translate(0, 40%);
     }
 
@@ -886,27 +844,26 @@
 
 @media (min-width:768px) {
     .cvorangeball {
-        position: absolute;
         top: 8%;
         left: 8%;
         max-width: 40px;
-        z-index: -1;
+    }
+
+    .mt-yourcv2 {
+        margin-top: 160px;
+        margin-bottom: 0;
     }
 
     .halfring-cv {
-        position: absolute;
         bottom: 9%;
         right: 49%;
         max-width: 78px;
-        z-index: -1;
     }
 
     .cubic-cv {
-        position: absolute;
         top: 5%;
         right: 3%;
         max-width: 31px;
-        z-index: -1;
     }
 
     .mt-yourcv {
@@ -918,69 +875,49 @@
         position: absolute;
         left: 0;
         top: 50%;
-        z-index: 2;
     }
 
     .next {
         position: absolute;
         right: 0;
         top: 50%;
-        z-index: 2;
     }
-
 }
 
 @media (min-width:992px) {
     .ellipesorangemain {
         left: 23%;
         top: 26%;
-        position: absolute;
-        width: 100%;
-        height: 100%;
         max-width: 626px;
         max-height: 115px;
-        flex-shrink: 0;
-        border-radius: 626px;
-        opacity: 0.5;
-        background: var(--color-orange);
-        filter: blur(120.5px);
-        z-index: -1;
     }
 
     .preview {
-        position: absolute;
         left: 68px;
         top: 50%;
     }
 
     .next {
-        position: absolute;
         right: 68px;
         top: 50%;
     }
 
     .cvorangeball {
-        position: absolute;
         top: 14%;
         max-width: 64px;
         left: 3%;
-        z-index: -1;
     }
 
     .halfring-cv {
-        position: absolute;
         bottom: 15%;
         right: 52%;
         max-width: 76px;
-        z-index: -1;
     }
 
     .cubic-cv {
-        position: absolute;
         top: 18%;
         right: 5%;
         max-width: 61px;
-        z-index: -1;
     }
 
     .linecv {
@@ -995,14 +932,12 @@
     .card-success {
         padding: 64px 230px 64px 236px;
         background-color: var(--color-orange);
-        border-radius: 21px;
         transform: translate(0, 50%);
     }
 
     .pt-footer {
         padding-top: 209px;
     }
-
 }
 
 @media (min-width:1200px) {
@@ -1011,82 +946,54 @@
     }
 
     .elegant-top-left {
-        position: absolute;
         left: 6%;
         top: 22%;
         max-width: 183px;
         max-height: 201px;
-        transform: rotate(-19.37deg);
-        border-radius: 10px;
-        box-shadow: 0px 3.01959px 35.22851px 0px rgba(0, 0, 0, 0.15);
-        z-index: -1;
     }
 
     .elegant-bottom-left {
-        position: absolute;
         left: 11.5%;
         bottom: 13%;
         max-width: 207px;
         max-height: 227px;
-        transform: rotate(-33.137deg);
-        border-radius: 10px;
-        box-shadow: 0px 3.01959px 35.22851px 0px rgba(0, 0, 0, 0.15);
-        z-index: -1;
     }
 
     .elegant-top-right {
-        position: absolute;
         right: 6%;
         top: 17%;
         max-width: 183px;
         max-height: 201px;
-        transform: rotate(21.718deg);
-        border-radius: 10px;
-        box-shadow: 0px 3.01959px 35.22851px 0px rgba(0, 0, 0, 0.15);
-        z-index: -1;
     }
 
     .elegant-bottom-right {
-        position: absolute;
         right: 12.5%;
         bottom: 13%;
         max-width: 207px;
         max-height: 228px;
-        transform: rotate(29.336deg);
-        border-radius: 10px;
-        box-shadow: 0px 3.01959px 35.22851px 0px rgba(0, 0, 0, 0.15);
-        z-index: -1;
     }
 
     .halfring {
-        position: absolute;
-        right: 5%;
         max-width: 76px;
         min-height: 52px;
         top: 56%;
-        z-index: -1;
     }
 
     .cubic-header {
-        position: absolute;
         left: 0%;
         max-width: 61px;
         max-height: 92px;
         bottom: 25%;
-        z-index: -1;
     }
 
     .orangeball-header {
-        position: absolute;
         left: 34%;
         max-width: 64px;
         max-height: 63px;
         top: 23%;
-        z-index: -1;
     }
 
     .lineunder {
-        position: absolute;
         bottom: -5px;
         right: 0;
         max-width: 271px;

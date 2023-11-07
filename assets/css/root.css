@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
 
 :root {
-    --fs-sm: 13px;
+    --fs-sm: 14px;
     --fs-md: 20px;
     --fs-lg: 22px;
     --fs-2xl: 16px;
@@ -12,9 +12,17 @@
     --color-dryorange: #FAECE7;
     --color-black: #000000;
     --color-main-black: #010101;
+    --color-fobg: #070707;
     --color-white: #FAFAFA;
+    --color-nav-af: #CCCCCC;
+    --color-bg: #F9F9F9;
+    --color-second-white: #FFFEFE;
+    --color-f7: #F7F7F7;
     --color-gray: #333333;
+    --color-b3: #383838;
+    --color-main-white: #ffff;
     --color-light-gray: #E2E2E2;
+    --color-sm: #E6E5E5;
     --color-medium-gray: #4D4948;
     --color-maxo: #4C4847;
     --color-gray-heavy: #323232;
