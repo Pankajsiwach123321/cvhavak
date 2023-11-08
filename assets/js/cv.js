@@ -15,7 +15,6 @@ nav.addEventListener("click", function () {
     fix3.classList.toggle("fixer3")
     overlay.classList.toggle("left-0")
     bgbody.classList.toggle("over-flow")
-    // nav.classList.toggle("left-corner")
 })
 overlay.addEventListener("click", function () {
     menubar.classList.toggle("left-0")
@@ -25,7 +24,6 @@ overlay.addEventListener("click", function () {
     loadtake.classList.toggle("nav-logo-routate")
     overlay.classList.toggle("left-0")
     bgbody.classList.toggle("over-flow")
-    // nav.classList.toggle("left-corner")
 })
 finish.forEach(e => {
     e.addEventListener("click", function () {
@@ -38,7 +36,6 @@ finish.forEach(e => {
         loadtake.classList.toggle("nav-logo-routate")
         fix2.classList.toggle("fixer2")
         fix3.classList.toggle("fixer3")
-        // nav.classList.toggle("left-corner")
     })
 });
 // preloder
@@ -111,9 +108,6 @@ $('.slick-cardtheme').slick({
                 slidesToScroll: 1,
             }
         },
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
     ]
 });
 
