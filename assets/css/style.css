@@ -198,8 +198,8 @@
 
 .my-vector::after {
     content: unset;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     position: unset;
 }
 
@@ -875,6 +875,13 @@ video {
         margin-bottom: 0;
     }
 
+    .my-vector::after {
+        content: url(../image/Vector.webp);
+        top: -18px;
+        left: 58%;
+        position: absolute;
+    }
+
     .halfring-cv {
         bottom: 9%;
         right: 49%;
@@ -916,7 +923,8 @@ video {
     .my-vector::after {
         content: url(../image/Vector.webp);
         top: -18px;
-        left:33%;
+        left: 33%;
+        z-index: -1;
         position: absolute;
     }
 
