@@ -196,6 +196,13 @@
     filter: blur(120.5px);
 }
 
+.my-vector::after {
+    content: unset;
+    top: 0px;
+    left: 0px;
+    position: unset;
+}
+
 /* .accordion  */
 .accordion-button:focus {
     border-color: unset !important;
@@ -904,6 +911,13 @@ video {
         top: 40%;
         max-width: 626px;
         max-height: 115px;
+    }
+
+    .my-vector::after {
+        content: url(../image/Vector.webp);
+        top: -18px;
+        left:33%;
+        position: absolute;
     }
 
     .preview {
