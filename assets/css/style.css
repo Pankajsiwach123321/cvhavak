@@ -661,13 +661,19 @@ video {
 }
 
 .fixer2 {
-    transform: rotate(48deg) translate(1px, -1px);
+    transform: rotate(48deg) translate(0px, -1px);
     background-color: var(--color-orange) !important;
+    border-radius: 20px;
 }
 
 .fixer3 {
-    transform: rotate(-45deg) translate(15px, -16px);
+    transform: rotate(-45deg) translate(17px, -17px);
     background-color: var(--color-orange) !important;
+    border-radius: 20px;
+}
+
+.nav-down {
+    transform: translateY(12px);
 }
 
 .slick-dots li {

@@ -11,6 +11,7 @@ nav.addEventListener("click", function () {
     menubar.classList.toggle("left-0")
     fix1.classList.toggle("fixer1")
     fix2.classList.toggle("fixer2")
+    nav.classList.toggle("nav-down")
     fix3.classList.toggle("fixer3")
     overlay.classList.toggle("left-0")
     bgbody.classList.toggle("over-flow")
