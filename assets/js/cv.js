@@ -58,3 +58,107 @@ window.addEventListener("scroll", function () {
         mybackto.style.display = "none";
     }
 });
+
+$('.slick-cardtheme').slick({
+    dots: true,
+    arrows: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+        {
+            breakpoint: 1140,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            }
+        },
+        {
+            breakpoint: 385,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
+});
+
+// slider 2 
+$('.slick-headerslide').slick({
+    dots: true,
+    arrows: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+});
+
+// slider 3 
+$('.slick-Clients').slick({
+    dots: false,
+    arrows: true,
+    prevArrow: ".preview",
+    nextArrow: ".next",
+    infinite: true,
+    fade: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+});
+
+// slider 4 
+$('.slick-Clients-sm').slick({
+    dots: false,
+    arrows: true,
+    infinite: true,
+    prevArrow: ".preview2",
+    nextArrow: ".next2",
+    speed: 300,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    responsive: [
+        {
+            breakpoint: 690,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                fade: true,
+            }
+        },
+    ]
+});
+//  aos animation 
+AOS.init({ duration: 2000, once: true });

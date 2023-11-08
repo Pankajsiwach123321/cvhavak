@@ -260,9 +260,9 @@
     <section id="help">
         <div class="container">
             <div class="row flex-column-reverse flex-md-row">
-                <div class="col-md-6 mt-5 mt-md-0 d-flex justify-content-center flex-column">
+                <div class="col-md-6 mt-5 mt-md-0 d-flex justify-content-center flex-column align-items-center">
                     <img src="./assets/image/celender.webp" alt="celender" class="w-100 help-img">
-                    <div class="button_div  d-sm-none">
+                    <div class="button_div d-block  d-md-none me-auto">
                         <button class=" fs-sm fw-semibold color-white ff-main nav_button mt-5">Book a Call</button>
                     </div>
                 </div>
@@ -273,7 +273,7 @@
                         email will be sent to the provided email address,
                         containing all the
                         necessary details, including the date, time, and instructions for the session.</p>
-                    <div class="button_div d-none d-sm-block">
+                    <div class="button_div d-none d-md-block">
                         <button class=" fs-sm fw-semibold color-white ff-main nav_button mt-4">Book a Call</button>
                     </div>
                 </div>
@@ -1158,7 +1158,8 @@
             <div class="card-success text-center">
                 <h2 class="text-center fs-3xl fw-medium ff-main color-white mb-0">Your Path to Success Starts Here:
                     Build Your CV Today</h2>
-                <p class="color-dryorange  text-center ff-main fs-sm fw-normal lh-24 pt-3 pb-3 mb-0">Our CV builder not only
+                <p class="color-dryorange  text-center ff-main fs-sm fw-normal lh-24 pt-3 pb-3 mb-0">Our CV builder not
+                    only
                     provides a user-friendly interface but also offers valuable guidance along the way.</p>
                 <button
                     class="text-decoration-none fs-sm fw-semibold color-mainblack  ff-main nav_buttonfooter mt-4">Get
@@ -1288,7 +1289,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script src="./assets/js/cv.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
         integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -1296,108 +1296,7 @@
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        $('.slick-cardtheme').slick({
-            dots: true,
-            arrows: false,
-            infinite: false,
-            speed: 300,
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            responsive: [
-                {
-                    breakpoint: 1140,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                        dots: true
-                    }
-                },
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 4,
-                        slidesToScroll: 2
-                    }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                    }
-                },
-                {
-                    breakpoint: 576,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                    }
-                },
-                {
-                    breakpoint: 385,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                    }
-                },
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-            ]
-        })</script>
-    <script>
-        $('.slick-headerslide').slick({
-            dots: true,
-            arrows: false,
-            infinite: false,
-            speed: 300,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-        })</script>
-    <script>
-        $('.slick-Clients').slick({
-            dots: false,
-            arrows: true,
-            prevArrow: ".preview",
-            nextArrow: ".next",
-            infinite: true,
-            fade: true,
-            speed: 300,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-        })</script>
-    <script>
-        $('.slick-Clients-sm').slick({
-            dots: false,
-            arrows: true,
-            infinite: true,
-            prevArrow: ".preview2",
-            nextArrow: ".next2",
-            speed: 300,
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            responsive: [
-                {
-                    breakpoint: 690,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        fade: true,
-                    }
-                },
-            ]
-        })</script>
-    <script>
-        AOS.init({ duration: 2000, once: true });
-    </script>
+    <script src="./assets/js/cv.js"></script>
 </body>
 
 </html>

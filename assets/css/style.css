@@ -439,7 +439,7 @@ video {
 }
 
 .card-theme:hover {
-    border: 1px solid rgba(243, 106, 62, 0.40);
+    border: 1px solid var(--color-th-br);
 }
 
 .card-theme:hover p {
