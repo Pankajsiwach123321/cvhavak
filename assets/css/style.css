@@ -151,6 +151,7 @@
 
 .card-ovelap {
     max-width: 509px;
+    min-width: unset;
 }
 
 .cubic-cv {
@@ -1018,5 +1019,15 @@ video {
     .py-102-155 {
         padding-top: 0;
         padding-bottom: 0;
+    }
+
+    .card-ovelap {
+        min-width: unset;
+    }
+}
+
+@media (min-width:1400px) {
+    .card-ovelap {
+        min-width: 475px;
     }
 }
