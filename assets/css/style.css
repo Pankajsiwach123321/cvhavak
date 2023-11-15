@@ -699,6 +699,18 @@ video {
     padding: 0;
 }
 
+.ellipes-slider {
+    position: absolute;
+    width: 165px;
+    top: 0;
+    left: 0;
+    height: 143px;
+    background-color: var(--color-orange);
+    opacity: 0.5;
+    filter: blur(120.5px);
+    z-index: -2;
+}
+
 @media (max-width:1200px) {
     label[id="nav"] {
         width: 42px;
